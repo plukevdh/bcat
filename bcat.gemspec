@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = 'bcat'
-  s.version = '0.6.2'
-  s.date = '2011-09-10'
+  s.version = '0.6.3'
+  s.date = '2019-05-24'
 
   s.description = "pipe to browser utility"
   s.summary =
@@ -45,15 +45,13 @@ Gem::Specification.new do |s|
   ]
   # = MANIFEST =
 
-  s.default_executable = 'bcat'
   s.executables = ['a2h', 'bcat', 'btee']
 
   s.test_files = s.files.select {|path| path =~ /^test\/.*_test.rb/}
-  s.add_dependency 'rack', '~> 1.0'
+  s.add_dependency 'rack', '~> 2.0'
 
   s.extra_rdoc_files = %w[COPYING]
 
-  s.has_rdoc = true
   s.homepage = "http://rtomayko.github.com/bcat/"
   s.rdoc_options = ["--line-numbers", "--inline-source"]
   s.require_paths = %w[lib]
